@@ -1,8 +1,9 @@
 name: SAT solver benchmark
 
 on:
-  push:
-    branches-ignore: [ "master" ]
+  pull_request:
+    branches:
+      - master
 
 jobs:
   bench:
