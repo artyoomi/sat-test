@@ -1,0 +1,16 @@
+name: SAT solver benchmark
+
+on:
+  push:
+    branches-ignore: [ "master" ]
+
+jobs:
+  bench:
+    runs-on: alpine-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Test echo
+        run: echo "IT must be echoed for all branches except master!!!"
